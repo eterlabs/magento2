@@ -57,7 +57,12 @@ bin/magento setup:install \
     --elasticsearch-port=9200
 ```
 
-7.- Probar el cambiente con entrando a la url:
+7.- Reinicia nginx para cargar la configuración de magento
+```
+docker exec -ti magento2-nginx service nginx restart
+```
+
+8.- Probar el cambiente con entrando a la url:
 ```
 http://localhost:8070
 ```
