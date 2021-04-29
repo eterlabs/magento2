@@ -2,7 +2,6 @@ code/
 /*
 !.env
 !config
-config/nginx.conf
 !bin
 !.gitignore
 !README.md
