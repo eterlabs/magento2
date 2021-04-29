@@ -1,9 +1,10 @@
+![alt text](https://www.eterlabs.com/wp-content/uploads/2021/02/cropped-eterlabs-2.png)
+
 #### Requerimiento Previos
 
 * Instalar Docker
 * Instalar MySql en maquina local
 
-![alt text](https://www.eterlabs.com/wp-content/uploads/2021/02/cropped-eterlabs-2.png)
 
 #### Montado del proyecto
 
