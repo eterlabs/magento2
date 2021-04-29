@@ -1,5 +1,20 @@
 ![alt text](https://www.eterlabs.com/wp-content/uploads/2021/02/cropped-eterlabs-2.png)
 
+Este repositorio fue generado para aprender a montar Magento 2.4 usando las imágenes de Docker de Eterlabs, estas imágenes las creamos basadas en los requerimientos internos para desarrollo por lo tanto no es recomendable usarlas para ambientes productivos.
+
+La principal razón para crearlas fue reducir el tiempo de esfuerzo al momento de montar los ambientes y así estandarizarlo en todos los proyectos, fue así como mejoramos al dejar de invertir de 1 a 2 días para montar un ambiente, ahora cualquier miembro del equipo puede hacerlo en tan solo dos horas.
+
+Si te gusta este repositorio y te gustaría poder obtener más herramientas de desarrollo, síguenos en nuestras redes sociales.
+
+* [Facebook](https://www.facebook.com/eterlabsmx)
+* [Instagram](https://www.instagram.com/eterlabsmx/)
+* [LinkedIn](https://www.linkedin.com/company/eterlabs)
+
+
+Si te gustaría sugerir contenido o módulos envíanos un correo a contacto@eterlabs.com
+
+Para usar este repositorio sigue los siguientes pasos:
+
 #### Requerimiento Previos
 
 * Instalar Docker
@@ -7,6 +22,7 @@
 
 
 #### Montado del proyecto
+
 
 1.- Clonar el proyecto
 ```
