@@ -6,7 +6,4 @@ config/nginx.conf
 !bin
 !.gitignore
 !README.md
-!docker-compose.bk.yml
-!nginx-prestashop.conf
-!docker-compose.php72.yml
-!docker-compose.php71.yml
+!docker-compose.yml
