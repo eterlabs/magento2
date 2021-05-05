@@ -31,7 +31,7 @@ git clone https://github.com/eterlabs/magento2.git
 
 2.- Cuando el proyecto se descargue en tu máquina, muévete al directorio creado
 ```
-cd magento2-docker
+cd magento2
 ```
 
 3.- Inicializa el ambiente de Docker para poder comenzar la instalación
