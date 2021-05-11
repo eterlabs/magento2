@@ -44,19 +44,14 @@ docker-compose up -d
 bin/composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition .
 ```
 
-5.- En este punto deberás tener instalado MySQL en tu máquina, así que el siguiente paso es generar una base de datos limpia en donde se instalara Magento.
-```
-mysql -u<user> -p -e 'CREATE DATABASE magento2;';
-```
-
-6.- Ejecutamos el comando de instalación de Magento.
+5.- Ejecutamos el comando de instalación de Magento.
 ```
 bin/magento setup:install \
     --base-url="http://localhost:8070/"  \
-    --db-host="host.docker.internal"  \
+    --db-host="mariadb"  \
     --db-name="magento2"  \
-    --db-user="root"  \
-    --db-password="password"  \
+    --db-user="magento"  \
+    --db-password="magentopass"  \
     --admin-firstname="admin"  \
     --admin-lastname="admin"  \
     --admin-email="admin@misitio.com"  \
@@ -73,27 +68,12 @@ bin/magento setup:install \
     --elasticsearch-port=9200
 ```
 
-En donde debemos considerar los siguientes datos:
-
-* db-host: se usará *host.docker.internal* en caso de estar en Mac y *host.docker.local* en caso de Linux, este hará un puente entre el contendor de Docker y tu máquina local
-  
-* db-name:  se usará el nombre de la base de datos creada en MySQL local.
-
-* db-name: se usará el nombre de usuario de la base de datos local
-
-* db-user: se usará el password de usuario de la base de datos local
-
-* elasticsearch-host: usaremos el nombre del contenedor definido en el docker-composese.yml en este caso ser *Elasticsearch*
-
-* elasticsearch-port: usará el número de puerto expuesto por el contenedor definido en el docker-composese.yml
-
-
-7.- Cuando la instalación termine será necesario reiniciar nginx para cargar la configuración de Magento
+6.- Cuando la instalación termine será necesario reiniciar nginx para cargar la configuración de Magento
 ```
 docker exec -ti magento2-nginx service nginx restart
 ```
 
-8.- Con todos estos pasos estarás listo para ver un Magento 2.4 corriendo en tu máquina
+7.- Con todos estos pasos estarás listo para ver un Magento 2.4 corriendo en tu máquina
 ```
 http://localhost:8070
 ```
