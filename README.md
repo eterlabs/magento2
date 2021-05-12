@@ -1,4 +1,4 @@
-![alt text](https://www.eterlabs.com/wp-content/uploads/2021/02/cropped-eterlabs-2.png)
+![alt text](https://eterlabs.com/media/github-docker-eterlabs.jpg)
 
 Este repositorio fue generado para aprender a montar Magento 2.4 usando las imágenes de Docker de Eterlabs, estas imágenes las creamos basadas en los requerimientos internos para desarrollo por lo tanto no es recomendable usarlas para ambientes productivos.
 
